@@ -32,11 +32,12 @@ namespace MeuApp
             Console.WriteLine("17 - String Builder                ");
             Console.WriteLine("18 - Struct                        ");
             Console.WriteLine("19 - Switch                        ");
-            Console.WriteLine("20 - Timezone                      ");
-            Console.WriteLine("21 - Value Datas                   ");
-            Console.WriteLine("22 - Value Types                   ");
-            Console.WriteLine("23 - While/Do                      ");
-            Console.WriteLine("24 - Sair                          ");
+            Console.WriteLine("20 - Timespan                      ");
+            Console.WriteLine("21 - Timezone                      ");
+            Console.WriteLine("22 - Value Datas                   ");
+            Console.WriteLine("23 - Value Types                   ");
+            Console.WriteLine("24 - While/Do                      ");
+            Console.WriteLine("25 - Sair                          ");
             Console.WriteLine("===================================");
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -69,11 +70,12 @@ namespace MeuApp
                     case "17": StringBuilder.Show(); break;
                     case "18": Struct.Show(); break;
                     case "19": Switch.Show(); break;
-                    case "20": Timezone.Show(); break;
-                    case "21": ValueDatas.Show(); break;
-                    case "22": ValueTypes.Show(); break;
-                    case "23": While.Show(); break;
-                    case "24": System.Environment.Exit(0); break;
+                    case "20": Timespan.Show(); break;
+                    case "21": Timezone.Show(); break;
+                    case "22": ValueDatas.Show(); break;
+                    case "23": ValueTypes.Show(); break;
+                    case "24": While.Show(); break;
+                    case "25": System.Environment.Exit(0); break;
                     default: Menu.Show(); break;
 
                 }
