@@ -21,13 +21,16 @@ namespace MeuApp
             Console.WriteLine("6 - Equals                         ");
             Console.WriteLine("7 - For                            ");
             Console.WriteLine("8 - Formatando Datas               ");
+            Console.WriteLine("8 - Formatando Moeda               ");
             Console.WriteLine("9 - FormatDatas                    ");
             Console.WriteLine("10 - Guids                         ");
             Console.WriteLine("11 - Indices                       ");
             Console.WriteLine("12 - Interpolação                  ");
             Console.WriteLine("13 - Manipulando Strings           ");
+            Console.WriteLine("13 - Math                          ");
             Console.WriteLine("14 - Métodos Adicionais            ");
             Console.WriteLine("15 - Métodos e Funções             ");
+            Console.WriteLine("15 - Padrão de Formatação          ");
             Console.WriteLine("16 - Start Datas                   ");
             Console.WriteLine("17 - StartsWith/EndsWith           ");
             Console.WriteLine("18 - String Builder                ");
@@ -57,7 +60,7 @@ namespace MeuApp
                     case "2": Comparacao.Show(); break;
                     case "3": ComparandoDatas.Show(); break;
                     case "4": CultureInfro.Show(); break;
-                    case "5": DateTime.Show(); break;
+                    case "5": MyDateTime.Show(); break;
                     case "6": Equales.Show(); break;
                     case "7": For.Show(); break;
                     case "8": FormatandoDatas.Show(); break;

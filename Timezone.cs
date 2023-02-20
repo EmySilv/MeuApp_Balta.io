@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 
 namespace MeuApp
@@ -11,30 +12,26 @@ namespace MeuApp
 
             Console.WriteLine(utcDate);
             Console.WriteLine(DateTime.Now);
-            
+
             Console.WriteLine(utcDate.ToLocalTime());
 
             var timeZoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
-            //convertendo as datas para o horário da Austrália
 
             Console.WriteLine(timeZoneAustralia);
 
-            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcDate, timeZoneAustralia);
-            //pegando data utc e colocando timezone
+            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc((System.DateTime)utcDate, timeZoneAustralia);
 
-            var timezones= TimeZoneInfo.GetSystemTimeZones();
-            foreach(var timezone in timezones)
+            var timezones = TimeZoneInfo.GetSystemTimeZones();
+            foreach (var timezone in timezones)
             {
                 Console.WriteLine(timezone.Id);
                 Console.WriteLine(timezone);
-                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(utcDate, timezone));
+                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc((System.DateTime)utcDate, timezone));
                 Console.WriteLine("------------------");
-
             }
-            
+
             Console.ReadKey();
             Menu.Show();
-
         }
     }
 }
